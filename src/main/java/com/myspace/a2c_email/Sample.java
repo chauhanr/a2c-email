@@ -6,12 +6,24 @@ package com.myspace.a2c_email;
 
 public class Sample implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Sample() {
-    }
+	@org.kie.api.definition.type.Label(value = "id")
+	private java.math.BigInteger id;
 
+	public Sample() {
+	}
 
+	public java.math.BigInteger getId() {
+		return this.id;
+	}
 
+	public void setId(java.math.BigInteger id) {
+		this.id = id;
+	}
+
+	public Sample(java.math.BigInteger id) {
+		this.id = id;
+	}
 
 }
